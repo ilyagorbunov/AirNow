@@ -1,0 +1,86 @@
+<resources>
+
+    <string name="app_name">AirNow</string>
+    <string name="app_name_lower">AirNow</string>
+
+    <string name="app_version">v%1$s</string>
+
+    <string name="info_no_internet">Couldn\'t connect the internet.</string>
+    <string name="info_bookmark_removed">Bookmark is removed</string>
+
+    <string name="content_desc_share_button">Share button</string>
+    <string name="content_desc_bookmark_button">Bookmark button</string>
+
+    <string name="send_feedback">Send Feedback</string>
+    <string name="opens_source_license">Open-source licenses</string>
+    <string name="add_location">Add Location</string>
+    <string name="location">Location</string>
+    <string name="weather">Air Condition</string>
+    <string name="undo">Undo</string>
+    <string name="filter">Filter</string>
+    <string name="sources">Sources</string>
+    <string name="later">Later</string>
+    <string name="share">Share</string>
+    <string name="share_app">Share this App</string>
+    <string name="licences">Licences</string>
+    <string name="publisher_time">%1$s &#8226; %2$s</string>
+
+    <string name="empty_screen_bookmark">You haven\'t bookmarked anything yet.</string>
+
+    <string name="legal">Legal</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="content_article_image">image of the article</string>
+    <string name="content_app_logo">AirNow logo</string>
+    <string name="nav_home">Home</string>
+    <string name="licence">Licence</string>
+    <string name="error_invalid_url">Cannot open invalid URL.</string>
+    <string name="empty_bookmark_title">Hi! Your bookmarked posts\nwill show up here.</string>
+    <string name="newsletter_headline">Every day the AirNow tells you how clean or polluted your outdoor air is.</string>
+    <string name="newsletter_desc1">Sent out weekly. No spam ever.</string>
+    <string name="newsletter_desc2">Top news, articles, podcasts, and job postings delivered to your inbox.</string>
+    <string name="newsletter_email_exist">You are already a subscriber. See you in your inbox.</string>
+    <string name="newsletter_subscribed">Successfully subscribed!\nSee you in your inbox.</string>
+    <string name="your_email">Your e-mail</string>
+    <string name="sign_me_up">Sign Me Up</string>
+    <string name="info_subs_confirmed">Thanks! Please check your inbox for a confirmation.</string>
+    <string name="previous_issues">Want to see previous issues? %1$s</string>
+    <string name="see_here">See here.</string>
+
+    <!-- Tasks strings -->
+    <string name="default_task_list_name">My Tasks</string>
+    <string name="posts_your_news">Your News</string>
+    <string name="tasks_list">Tasks List</string>
+
+    <string name="bullet_separator">•</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="not_implemented">Not implemented</string>
+
+    <string name="list_title_hint">City</string>
+
+    <string name="done">Done</string>
+    <string name="list_edit_title">Rename list</string>
+    <string name="list_add_title">Create new list</string>
+    <string name="more_options">More options</string>
+
+    <string name="task_order_menu_title">Select</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_by_my_order">Sort by my order</string>
+    <string name="edit_list">Rename list</string>
+    <string name="delete_list">Delete list</string>
+    <string name="delete_all_completed_tasks">Delete all completed tasks</string>
+    <string name="task_order_menu_my_order">News</string>
+    <string name="posts_saved">Saved</string>
+
+    <string name="operation_task_list_deleted">Task list deleted</string>
+
+    <!-- Weather -->
+    <string name="wind">Wind: %1$d km/h</string>
+    <string name="humidity">Humidity</string>
+    <string name="temp">%1$dºC</string>
+    <string name="tempMax">Temp Max: %1$dºC</string>
+    <string name="tempMin">Temp Min: %1$dºC</string>
+    <string name="sunrise">Sunrise: %1$s</string>
+    <string name="sunset">Sunset: %1$s</string>
+
+</resources>

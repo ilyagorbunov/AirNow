@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">230dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="spacing_micro">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+    <dimen name="spacing_xxxlarge">76dp</dimen>
+
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="touch_raise">4dp</dimen>
+    <dimen name="card_border_width">1dp</dimen>
+    <dimen name="button_corner_radius">24dp</dimen>
+    <dimen name="poppins_padding_buttons">6dp</dimen>
+
+    <dimen name="general_padding">16dp</dimen>
+    <dimen name="general_space">10dp</dimen>
+
+    <!--Tasks dimens-->
+    <dimen name="bottom_sheet_corner_radius">8dp</dimen>
+    <dimen name="bottom_sheet_decoration_minimal_height">20dp</dimen>
+    <dimen name="header_elevation">8dp</dimen>
+    <dimen name="option_item_horiz_spacing">24dp</dimen>
+    <dimen name="option_item_vertical_spacing">16dp</dimen>
+    <dimen name="small_font_size">14sp</dimen>
+    <dimen name="select_font_size">13sp</dimen>
+    <dimen name="snackbar_bottom_margin">90dp</dimen>
+
+</resources>

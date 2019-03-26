@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="weather"
+            type="com.airnow.data.model.Weather" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/item_rv_account_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/general_padding">
+
+            <ImageView
+                android:id="@+id/item_rv_weather_iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/general_space"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@{weather.name}"
+                    style="@style/AN.TitleStyleLight.List"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:text="Tokyo"/>
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_temp_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:relativeTemp="@{weather.main.temp_min}"
+                    app:isMax="@{false}"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textSize="14dp"
+                    tools:text="temp min 14C"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_temp_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:relativeTemp="@{weather.main.temp_max}"
+                    app:isMax="@{true}"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textSize="14dp"
+                    tools:text="temp max 14C"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:wind="@{weather.wind.speed}"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textSize="14dp"
+                    tools:text="speed 10 km/h"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:relativeSun="@{weather.sys.sunrise}"
+                    app:isSunset="@{false}"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textSize="14dp"
+                    tools:text="sunrice in 10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/item_rv_weather_tv_sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:relativeSun="@{weather.sys.sunset}"
+                    app:isSunset="@{true}"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textSize="14dp"
+                    tools:text="sunset in 20"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/item_rv_weather_iv_avatar"
+                    android:gravity="left" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_rv_weather_tv_temp_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorAccent"
+                app:temp="@{weather.main.temp}"
+                tools:text="14C"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

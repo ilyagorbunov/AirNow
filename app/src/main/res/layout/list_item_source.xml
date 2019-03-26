@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="source"
+            type="com.airnow.data.model.Source" />
+
+        <variable
+            name="clickListener"
+            type="com.airnow.ui.adapter.UIModelClickListener" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="@{()->clickListener.onClick(source)}"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/AN.Button.Text"
+            android:lines="2"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:enabled="@{source.isEnabled()}"
+            android:gravity="center_vertical"
+            android:text="@{source.name}"
+            tools:text="Title of an awesome publisher" />
+    </FrameLayout>
+
+</layout>

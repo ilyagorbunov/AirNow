@@ -1,0 +1,42 @@
+buildscript {
+    apply from: "$rootDir/dependencies.gradle"
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$versions.kotlin"
+        classpath "io.fabric.tools:gradle:$versions.fabric_gradle"
+        classpath "com.google.gms:google-services:$versions.play_services"
+    }
+
+}
+
+plugins {
+    id "com.github.ben-manes.versions" version "0.20.0" // dependencyUpdates
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+tasks.withType(AbstractCompile) {
+    options.compilerArgs += ["--add-modules", "java.xml.bind"]
+}
+
+tasks.withType(Test) {
+    jvmArgs += ["--add-modules", "java.xml.bind"]
+}
