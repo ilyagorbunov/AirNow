@@ -1,5 +1,4 @@
-# WeatherApp
-
+# AirNow
 This is a sample app that show `MVVM` approach.
 
 ### Technology stack
