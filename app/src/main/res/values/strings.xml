@@ -73,6 +73,7 @@
     <string name="posts_saved">Saved</string>
 
     <string name="operation_task_list_deleted">Task list deleted</string>
+    <string name="operation_task_list_deleted">Task list deleted</string>
 
     <!-- Weather -->
     <string name="wind">Wind: %1$d km/h</string>
