@@ -83,5 +83,7 @@
     <string name="tempMin">Temp Min: %1$dºC</string>
     <string name="sunrise">Sunrise: %1$s</string>
     <string name="sunset">Sunset: %1$s</string>
+    <string name="sunset1">Sunset: %1$s</string>
+    <string name="sunset2">Sunset: %1$s</string>
 
 </resources>
